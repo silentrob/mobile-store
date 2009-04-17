@@ -10,4 +10,4 @@ RESTFUL (like) SQL Lite Wrapper for Storing Data - Key Value Pair
     sql.put(key, value);
     sql.del(key);
     sql.exists(key,callback); // callback will return true or false
-    sql.cleat(); clears the db
+    sql.clear(); clears the db
