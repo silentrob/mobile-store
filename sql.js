@@ -5,7 +5,7 @@
 *   RESTFUL (like) SQL Lite Wrapper for Storing Data - Key Value Pair
 */
 
-var sql = function() {
+var store = function() {
 	var dbName = 'storeDB';
 	var version = '1.0';
 	var dbTable = 'storeDBTbl';

@@ -1,13 +1,13 @@
 
-SQL Store
+Mobile Store
 =========
 
-RESTFUL (like) SQL Lite Wrapper for Storing Data - Key Value Pair
+Key Value Pair for mobile devices
 -----------------------------------------------------------------
 
-    sql.get(key, callback); // callback will return the elements value 
-    sql.post(key, value);    
-    sql.put(key, value);
-    sql.del(key);
-    sql.exists(key,callback); // callback will return true or false
-    sql.clear(); clears the db
+    store.get(key, callback); // callback will return the elements value 
+    store.post(key, value);    
+    store.put(key, value);
+    store.del(key);
+    store.exists(key,callback); // callback will return true or false
+    store.clear(); clears the db
