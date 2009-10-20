@@ -71,6 +71,12 @@ var store = function() {
 				tx.executeSql("UPDATE " + dbTable + " SET value=?,timestamp=? WHERE key=? ",[value,now(),key],defaultDataHandle,defaultErrorHandle);
 			});
 		},
+		
+		set: function(key,value) {
+		  var _this = this;
+		  defaultErrorHandle = function() { _this.put(key,value); }
+		  this.post(key,value);  
+		},		
 	    
 	    exists: function(key,fnc){
 			this.get(key,function(d){
