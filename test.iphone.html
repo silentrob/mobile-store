@@ -5,10 +5,14 @@
     <script src="store.iphone.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         var runtest = function() {
-            store.set("test",{foo:'foo',bar:12345});
-            store.get("test",function(d) {console.log(d);})
+            store.set("test","{foo:'foo',bar:12345}");
+            store.get("test",function(d) {
+                var data = eval('(' + d + ')');
+                console.log(data['bar']);
+            });
             store.clear();            
         }
+    
     </script>
 </head>
 <body onload="runtest();">
